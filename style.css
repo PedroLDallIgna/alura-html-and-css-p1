@@ -2,6 +2,10 @@ body {
 
 }
 
+.title-header {
+    padding-left: 20px;
+}
+
 #banner {
     width: 100%;
 }
@@ -11,7 +15,7 @@ body {
     padding: 30px;
 }
 
-h1 {
+.title-centralized {
     text-align: center;
 }
 
@@ -30,10 +34,6 @@ em strong {
 .benefits {
     background-color: #FFFFFF;
     padding: 20px;
-}
-
-h2 {
-    text-align: center;
 }
 
 ul {
