@@ -1,3 +1,40 @@
+.banner {
+    width: 100%;
+}
+
+.about {
+    padding: 30px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: left;
+}
+
+.utensilities {
+    width: 120px;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.about p {
+    margin: 0 0 1em 0;
+}
+
+.about strong {
+    font-weight: bold;
+}
+
+.about em {
+    font-style: italic;
+}
+
+.image-benefits {
+    width: 50%;
+}
+
 .products {
     width: 940px;
     margin: 0 auto;
