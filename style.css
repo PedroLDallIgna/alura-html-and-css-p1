@@ -1,3 +1,97 @@
+.banner {
+    width: 100%;
+}
+
+.about {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: left;
+}
+
+.utensilities {
+    width: 120px;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.about p {
+    margin: 0 0 1em 0;
+}
+
+.about strong {
+    font-weight: bold;
+}
+
+.about em {
+    font-style: italic;
+}
+
+.location {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.location p {
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+
+.map {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.benefits {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.benefits-content {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.benefits-list {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.itens {
+    list-style: "\2605  ";
+    line-height: 1.5em;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.image-benefits {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms opacity;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.image-benefits:hover {
+    opacity: 0.7;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
 .products {
     width: 940px;
     margin: 0 auto;
@@ -43,13 +137,9 @@
     margin-top: 10px;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
-    margin: 40px 0;
+    width: 940px;
+    margin: 40px auto;
 }
 
 form label, form legend {
@@ -88,7 +178,7 @@ form input[type="checkbox"] {
 }
 
 table {
-    margin: 20px 0 40px 0;
+    margin: 20px auto 40px auto;
 }
 
 thead {
@@ -100,4 +190,33 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .benefits-content, .map, .video, .about, form {
+        width: auto;
+    }
+
+    .benefits-list, .image-benefits, .products {
+        width: 100%;
+    }
+
+    .products li {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    form, table {
+        margin-left: 30px;
+    }
+
+    .input-padrao {
+        width: 80%;
+    }
+    
+    .submit {
+        width: 50%;
+    }
 }
