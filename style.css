@@ -63,6 +63,8 @@
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
 .itens {
@@ -136,7 +138,8 @@
 }
 
 form {
-    margin: 40px 0;
+    width: 940px;
+    margin: 40px auto;
 }
 
 form label, form legend {
@@ -175,7 +178,7 @@ form input[type="checkbox"] {
 }
 
 table {
-    margin: 20px 0 40px 0;
+    margin: 20px auto 40px auto;
 }
 
 thead {
@@ -187,4 +190,33 @@ thead {
 td, th {
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .benefits-content, .map, .video, .about, form {
+        width: auto;
+    }
+
+    .benefits-list, .image-benefits, .products {
+        width: 100%;
+    }
+
+    .products li {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    form, table {
+        margin-left: 30px;
+    }
+
+    .input-padrao {
+        width: 80%;
+    }
+    
+    .submit {
+        width: 50%;
+    }
 }
