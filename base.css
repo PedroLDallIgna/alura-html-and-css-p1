@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background: #BBBBBB;
     padding: 20px 0;
@@ -51,4 +57,18 @@ footer {
 
 .copyright::before {
     content: "\00A9  ";
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: auto;
+    }
+
+    .box h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
 }
