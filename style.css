@@ -1,48 +1,70 @@
-body {
+.products {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.products li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.products li:hover {
+    border-color: #C78C19;
+}
+
+.products li:active {
+    border-color: #088C19;
+}
+
+.products li:hover h2 {
+    font-size: 34px;
+}
+
+.products h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product-desc {
+    font-size: 18px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main {
+    width: 940px;
     margin: 0 auto;
 }
 
-#banner {
-    width: 100%;
+form {
+    margin: 40px 0;
 }
 
-.main {
-    background: #CCCCCC;
-    padding: 30px;
-}
-
-.title-centralized {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-#mission {
+form label {
+    display: block;
     font-size: 20px;
+    margin: 0 0 10px 0;
 }
 
-em strong {
-    color: #FF0000;
-}
-
-.benefits {
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-.benefits ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-
-.itens {
-    font-style: italic;
-}
-
-.image-benefits {
+form input {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 15px;
     width: 50%;
 }
+
+form input[type="submit"] {
+    width: auto;
+} 
